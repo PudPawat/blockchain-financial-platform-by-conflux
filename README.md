@@ -1,1 +1,3 @@
-# blockchain-financial-platform-by-conflux
+# BlockChain Financial Platform by  conflux competition
+## conflux competition
+## TEAM Nethereum
