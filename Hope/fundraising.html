@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPE | Fundraising</title>
+    <link rel="icon shortcut" href="./images/hope_logo2.png">
+    <link rel="stylesheet" href="./scss/bootstrap.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand text-secondary" href="index.html"><img src ="./images/hope_logo3.png" style = "width: 100px"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn bg-transparent dropdown-toggle text-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Projects
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="auction.html">Auction</a>
+                          <a class="dropdown-item" href="fundraising.html">Fundraising</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="index.html#section2">About us</a>
+                </li>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" href="#loginModal">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" href="#signUpModal">
+                                <i class="fas fa-user-plus"></i> Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    
+    <!-- loginModal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!-- loginForm -->
+            <form id="loginForm" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="text" id="loginEmail" class="form-control" placeholder="Email..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" class="form-control" placeholder="Password..."
+                            required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </div>
+            </form>
+            <!-- loginForm end -->
+        </div>
+    </div>
+    <!-- loginModal end -->
+
+    <!-- signUpModal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!-- signUpForm -->
+            <form id="signUpForm" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="signUpName">Name</label>
+                        <input type="text" id="signUpEmail" class="form-control" placeholder="Name..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signUpEmail">Email</label>
+                        <input type="text" id="signUpEmail" class="form-control" placeholder="Email..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signUpPassword">Password</label>
+                        <input type="password" id="signUpPassword" class="form-control" placeholder="Password..."
+                            required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </button>
+                </div>
+            </form>
+            <!-- signUpForm end -->
+        </div>
+    </div>
+    <!-- signUpModal end -->
+
+    <!-- contents -->
+
+    <!-- section1 -->
+    <section id="section1" class="py-5 bg-white row mt-5 ">
+        <h3 class="section-title text-center text-primary col-sm-12 md-2">On Going Fundraising</h3>
+        <div class="container">
+            <!-- Layout 3 cols in a row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="col-card">
+                            <img src="https://picsum.photos/id/155/800/400" class="w-100">
+                            <div class="col-card-body">
+                                <h3>Project 1</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nisi eligendi suscipit cum dolorum
+                                    vel ducimus nesciunt molestiae, nihil reprehenderit accusamus quasi, id quaerat! Odio ipsa veniam
+                                    officiis reprehenderit unde!</p>
+                                <a class="nav-link" data-toggle="modal" href="#donateModal">
+                                <button type="donate" class="btn btn-primary">
+                                    <i class="fas fa-donate"></i> Donate
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="col-card">
+                            <img src="https://picsum.photos/id/155/800/400" class="w-100">
+                            <div class="col-card-body">
+                                <h3>Project 2</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nisi eligendi suscipit cum dolorum
+                                    vel ducimus nesciunt molestiae, nihil reprehenderit accusamus quasi, id quaerat! Odio ipsa veniam
+                                    officiis reprehenderit unde!</p>
+                                <a class="nav-link" data-toggle="modal" href="#donateModal">
+                                <button type="donate" class="btn btn-primary">
+                                    <i class="fas fa-donate"></i> Donate
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="col-card">
+                            <img src="https://picsum.photos/id/155/800/400" class="w-100">
+                            <div class="col-card-body">
+                                <h3>Project 3</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nisi eligendi suscipit cum dolorum
+                                    vel ducimus nesciunt molestiae, nihil reprehenderit accusamus quasi, id quaerat! Odio ipsa veniam
+                                    officiis reprehenderit unde!</p>
+                                <a class="nav-link" data-toggle="modal" href="#donateModal">
+                                <button type="donate" class="btn btn-primary">
+                                    <i class="fas fa-donate"></i> Donate
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- donateModal -->
+    <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!-- donateForm -->
+            <form id="biddingForm" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Donate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="donateAmount">Amount</label>
+                        <input type="text" id="bidAmount" class="form-control" placeholder="Amount" required>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="fundraisingDonate">Choose Project:</label><br>
+                        <select name="fundraisingProject", id="fundraisingDonate">
+                            <option value="fundraisingP1">Project 1</option>
+                            <option value="fundraisingP2">Project 2</option>
+                            <option value="fundraisingP3">Project 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-donate"></i> Donate
+                    </button>
+                </div>
+            </form>
+            <!-- donateForm end -->
+        </div>
+    </div>
+    <!-- donateModal end-->
+    <!-- section1 end -->
+
+    <!-- section2-->
+    <section id="section2" class="py-5">
+        <h3 class="section-title text-center text-primary col-sm-12 md-2">Initiate Fundraising</h3>
+        <div class="container " >
+            <div class="row">
+                <div class="col-4">
+                    <img src="./images/hope_logo4.png" width="100%">
+                </div>
+                <div class="col-8">
+                    <br>
+                    <p>Start a fundraising project!
+                        <br><br>
+                        <a class="nav-link" data-toggle="modal" href="#fundraisingModal">
+                        <button type="startDonate" class="btn btn-primary">
+                            <i class="fas fa-donate"></i> Start Fundrasing
+                        </button></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fundraisingModal -->
+    <div class="modal fade" id="fundraisingModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!-- fundraisingForm -->
+            <form id="fundraisingForm" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Start Fundraising</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="donateTitle">Title</label>
+                        <input type="text" id="donateTitle" class="form-control" placeholder="Title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donatePeriod">Period</label>
+                        <input type="text" id="donatePeriod" class="form-control" placeholder="Days" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-donate"></i> Start
+                    </button>
+                </div>
+            </form>
+            <!-- fundraisingForm end -->
+        </div>
+    </div>
+    <!-- fundraisingModal end-->
+    <!--section2 end-->
+
+    <!-- section3-->
+    <section id="section3" class="py-5">
+        <h3 class="section-title text-center text-primary col-sm-12 md-2">Donation Records</h3>
+        <div class="container" >
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <p><center>
+                        View all your donation records here.
+                        <a class="nav-link" data-toggle="modal" href="#donationRecModal">
+                        <button type="donateRec" class="btn btn-primary">
+                            <i class="fas fa-file-alt"></i> View Records
+                        </button></a>
+                    </center>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 end-->
+    <!-- end of contents -->
+
+    <!-- footer -->
+    <footer id="footer" class="pt-5 bg-secondary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h4>Contact Us</h4>
+                    <a href="mailto:service@brand.com">hope@gmail.com</a>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Product</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Enterprice</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Resource</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Guide</a>
+                        </li>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">API</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark mt-5 py-2">
+            <p class="text-center" style="font-size:15px">hope.com&copy; 2021. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <a href="#">
+    <button id="goBackBtn" class="bg-primary">
+        <i class="fas fa-chevron-up"></i>
+    </button></a>
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- main.js -->
+    <script src="./javascripts/main.js"></script>
+</body>
+
+</html>
